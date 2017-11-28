@@ -1,4 +1,6 @@
-<?php namespace Models;
+<?php
+
+namespace Models;
 
 class Conexion
 {
@@ -8,17 +10,24 @@ class Conexion
 		"pass" => "root",
 		"db" => "proyecto"
 	);
+
 	private $con;
 
-	private function __construct(){
+	private function __construct()
+	{
 		$this->con = new \mysqli($this -> datos["host"], $this -> datos["user"], $this -> datos["pass"], $this -> datos["db"]);
 	}
-	public function consultaSimple($sql){
-		$this->con->query($sql); 
+
+	public function consultaSimple($sql)
+	{
+		$this->con->query($sql);
 	}
-	public function consultaRetorno($sql){
+
+	public function consultaRetorno($sql)
+	{
 		$datos = $this->con->query($Sql);
-		return $datos; 
+
+		return $datos;
 	}
 }
   ?>
