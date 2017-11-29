@@ -1,8 +1,8 @@
-<?php 
+<?php
 
 namespace Config;
 
-class Autoload()
+class Autoload
 {
 	public static function run()
 	{
@@ -15,5 +15,4 @@ class Autoload()
 
 }
 
-
- ?>
+?>
