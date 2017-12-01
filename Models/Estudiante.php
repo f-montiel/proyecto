@@ -13,6 +13,10 @@ class Estudiante
 	private $fecha;
 	private $con;
 
+	}
+
+	}
+
 	public function __construct()
 	{
 		$this->con = new Conexion();
