@@ -7,13 +7,13 @@ class Conexion
 	private $datos = array(
 		"host" => "localhost",
 		"user" => "root",
-		"pass" => "root",
+		"pass" => "",
 		"db" => "proyecto"
 	);
 
 	private $con;
 
-	private function __construct()
+	public function __construct()
 	{
 		$this->con = new \mysqli($this -> datos["host"], $this -> datos["user"], $this -> datos["pass"], $this -> datos["db"]);
 	}
@@ -25,7 +25,7 @@ class Conexion
 
 	public function consultaRetorno($sql)
 	{
-		$datos = $this->con->query($Sql);
+		$datos = $this->con->query($sql);
 
 		return $datos;
 	}
