@@ -18,7 +18,7 @@ namespace Config;
 				$this->controlador = strtolower(array_shift($ruta));
 				$this->metodo = strtolower(array_shift($ruta));
 
-				if ($this->metodo) {
+				if($this->metodo) {
 					$this->metodo = "index";
 				}
 				$this->argumento = $ruta;
@@ -42,4 +42,4 @@ namespace Config;
 	}
 
 
- ?>
+?>

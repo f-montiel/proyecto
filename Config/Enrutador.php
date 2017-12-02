@@ -7,7 +7,7 @@ namespace Config;
 
 		public static function run(request $request)
 		{
-			$controlador = $request->getControlado() . "Controlador";
+			$controlador = $request->getControlador() . "Controlador";
 			$ruta = ROOT . "Controllers" . DS . $controlador . ".php";
 			$metodo = $request->getMetodo();
 			$argumento = $request->getArgumento();
@@ -28,4 +28,4 @@ namespace Config;
 	}
 
 
- ?>
+?>
