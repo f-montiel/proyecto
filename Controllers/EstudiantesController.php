@@ -1,14 +1,14 @@
-<?php 
+<?php
 
 namespace Controllers;
 
-	class estudiantesController
+	class EstudiantesController
 	{
 		public function index()
 		{
 			print "hola soy el index del estudiante";
 		}
-	} 
+	}
 
 
 ?>
